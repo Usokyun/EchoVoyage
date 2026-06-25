@@ -16,7 +16,7 @@ The first implementation target is a simple web version. Other channels can come
 - Auth: none in MVP
 - Deployment: local-first, later Docker
 
-Day 1 does not initialize the full web app. It only creates the skeleton and documents the target structure.
+Day 2 initializes the runnable web prototype with Next.js App Router, TypeScript, and Tailwind v4. The current app uses static demo data and does not connect LLMs, SQLite, or real memory persistence yet.
 
 ## Conceptual Modules
 
@@ -40,6 +40,8 @@ Reusable UI components:
 - `TrainingScene`
 - `MemoryStats`
 
+Day 2 implements these as static UI components. They render the first product journey but do not submit data or call backend services.
+
 ### `lib/llm/`
 
 LLM adapter and generation functions:
@@ -50,6 +52,8 @@ LLM adapter and generation functions:
 - `generateJourney.ts`: Journey Designer role
 - `generateScene.ts`: Companion Agent scene role
 
+Day 2 keeps these as typed placeholders. Real LLM calls start in v0.1.
+
 ### `lib/memory/`
 
 Memory state and simple review scheduling:
@@ -57,11 +61,26 @@ Memory state and simple review scheduling:
 - `types.ts`
 - `scheduler.ts`
 
+Day 2 shows memory state through static preview data. The simple scheduler remains available for future integration.
+
 ### `lib/db/`
 
 Database schema and persistence layer.
 
 Day 1 stores only schema direction. SQLite implementation comes later.
+
+### `lib/demo-data.ts`
+
+Static Day 2 prototype data:
+
+- sample corpus
+- selected Agent persona
+- fake voyage
+- fake landmarks
+- fake training scene
+- fake memory summary
+
+This file should disappear or shrink once v0.1 starts using generated journeys.
 
 ## Data Flow
 

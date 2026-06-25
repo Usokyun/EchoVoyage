@@ -45,15 +45,15 @@ The MVP must include:
 
 The MVP should not include login, payments, social features, mobile apps, QQ/AstrBot integration, audio upload, speech recognition, full FSRS, or a public content library.
 
-## Day 1 Status
+## Current Status
 
-This repository is currently in Day 1: the soul and skeleton phase.
+This repository is currently in Day 2: the static web prototype phase.
 
-Day 1 focuses on documents, structure, and static prototype direction. It does not yet provide a runnable application.
+Day 2 turns the project skeleton into a runnable Next.js page that expresses the product feeling. It is still static: LLM generation, SQLite persistence, and real memory tracking are not connected yet.
 
 ## Quick Start
 
-The future local-first setup should become:
+Run the local static prototype:
 
 ```bash
 pnpm install
@@ -61,7 +61,21 @@ cp .env.example .env
 pnpm dev
 ```
 
-For now, start with the project documents:
+Then open:
+
+```text
+http://localhost:3000
+```
+
+The current page previews:
+
+- Corpus input
+- Agent persona selection
+- Fake Journey Map
+- One training scene
+- Today's echoes
+
+Project documents:
 
 - [Manifesto](./MANIFESTO.md)
 - [Roadmap](./ROADMAP.md)
