@@ -67,6 +67,8 @@ Then open:
 http://localhost:3000
 ```
 
+The root path redirects to the English prototype at `/en`. The Chinese prototype is available at `/zh`.
+
 The current page previews:
 
 - Corpus input

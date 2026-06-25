@@ -1,0 +1,96 @@
+{
+  "Metadata": {
+    "title": "EchoVoyage",
+    "description": "Turn language materials into memory journeys."
+  },
+  "Nav": {
+    "voyage": "Voyage",
+    "landmarks": "Landmarks",
+    "echoes": "Echoes",
+    "github": "GitHub"
+  },
+  "HomePage": {
+    "badge": "Day 2 static prototype",
+    "title": "Turn language into a memory voyage.",
+    "description": "Paste a corpus you care about. Choose a companion. Travel through its words, scenes, expressions, and echoes until the text becomes part of your memory.",
+    "primaryCta": "Start with a corpus",
+    "secondaryCta": "Preview the route",
+    "trunkLabel": "The trunk",
+    "trunkItems": [
+      "Corpus",
+      "Voyage",
+      "Landmark",
+      "Scene",
+      "Response",
+      "Feedback",
+      "Memory",
+      "Return"
+    ],
+    "footer": "EchoVoyage Day 2 is a static web prototype. LLM generation, SQLite persistence, and real memory updates are intentionally out of scope."
+  },
+  "CorpusInput": {
+    "kicker": "Corpus",
+    "heading": "Paste a text you want to travel through",
+    "titleLabel": "Title",
+    "titlePlaceholder": "Name this corpus",
+    "rawLabel": "Raw text",
+    "rawPlaceholder": "Paste a lyric, speech, dialogue, essay, subtitle, poem, or any meaningful text.",
+    "languageLabel": "Language hint",
+    "cta": "Begin the voyage",
+    "note": "Static preview only. Generation is not connected yet.",
+    "status": "Day 2"
+  },
+  "AgentPersonaPicker": {
+    "kicker": "Companion",
+    "heading": "Choose an Agent persona",
+    "status": "static",
+    "personas": {
+      "gentle-guide": {
+        "name": "Gentle Guide",
+        "description": "Soft feedback, patient hints, and slow returns."
+      },
+      "strict-mentor": {
+        "name": "Strict Mentor",
+        "description": "Sharper corrections and a clear path to mastery."
+      },
+      "mischievous-bard": {
+        "name": "Mischievous Bard",
+        "description": "Playful scenes, surprising prompts, and story turns."
+      },
+      "brave-companion": {
+        "name": "Brave Companion",
+        "description": "Adventure language for learners who like momentum."
+      },
+      "silent-scholar": {
+        "name": "Silent Scholar",
+        "description": "Minimal words, careful notes, and quiet precision."
+      }
+    }
+  },
+  "JourneyMap": {
+    "kicker": "Journey Map",
+    "difficulty": "difficulty"
+  },
+  "TrainingScene": {
+    "kicker": "Training Scene",
+    "description": "A Day 2 static roleplay preview. Real answer checking and Agent feedback arrive later.",
+    "promptLabel": "Companion prompt",
+    "responseLabel": "Learner response",
+    "feedbackLabel": "Companion feedback"
+  },
+  "MemoryStats": {
+    "kicker": "Today's Echoes",
+    "heading": "Places waiting for a return.",
+    "description": "Memory is a trail. EchoVoyage will eventually bring back landmarks as they begin to fade.",
+    "masteryLabel": "Mastery",
+    "masteryNote": "Static preview score for the first voyage.",
+    "echoesLabel": "Echoes waiting",
+    "echoesNote": "Landmarks scheduled for a future revisit.",
+    "trailLabel": "Memory trail"
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "en": "EN",
+    "zh": "中文"
+  }
+}

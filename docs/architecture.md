@@ -18,6 +18,13 @@ The first implementation target is a simple web version. Other channels can come
 
 Day 2 initializes the runnable web prototype with Next.js App Router, TypeScript, and Tailwind v4. The current app uses static demo data and does not connect LLMs, SQLite, or real memory persistence yet.
 
+The current prototype also supports English and Chinese UI routes through `next-intl`:
+
+- `app/[locale]/`: localized App Router layout and page
+- `i18n/`: routing, navigation, and request configuration
+- `messages/`: UI translation resources
+- `proxy.ts`: Next.js 16 locale routing boundary
+
 ## Conceptual Modules
 
 ### `app/`
@@ -27,6 +34,8 @@ Future Next.js App Router pages.
 Expected routes:
 
 - `/`: Landing and first voyage entry
+- `/en`: English landing and first voyage entry
+- `/zh`: Chinese landing and first voyage entry
 - `/voyage`: Journey Map and current training scene
 - `/review`: Today's echoes
 

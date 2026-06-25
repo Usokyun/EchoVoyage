@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl"
+
 export type JourneyLandmark = {
   id: string
   text: string
@@ -14,6 +16,8 @@ export type JourneyMapProps = {
 }
 
 export function JourneyMap({ title, description, landmarks }: JourneyMapProps) {
+  const t = useTranslations("JourneyMap")
+
   return (
     <section
       id="journey"
@@ -22,7 +26,7 @@ export function JourneyMap({ title, description, landmarks }: JourneyMapProps) {
       <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.24em] text-[var(--accent)]">
-            Journey Map
+            {t("kicker")}
           </p>
           <h2 className="mt-4 max-w-[11ch] text-4xl font-semibold tracking-[-0.05em] text-balance md:text-5xl">
             {title}
@@ -50,7 +54,7 @@ export function JourneyMap({ title, description, landmarks }: JourneyMapProps) {
                     {landmark.type}
                   </span>
                   <span className="font-mono text-xs text-[var(--muted)]">
-                    difficulty {landmark.difficulty}/5
+                    {t("difficulty")} {landmark.difficulty}/5
                   </span>
                 </div>
                 <h3 className="mt-4 text-2xl font-semibold tracking-[-0.035em]">

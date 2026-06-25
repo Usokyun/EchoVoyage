@@ -1,0 +1,96 @@
+{
+  "Metadata": {
+    "title": "EchoVoyage",
+    "description": "把语言材料变成一段记忆旅程。"
+  },
+  "Nav": {
+    "voyage": "旅程",
+    "landmarks": "地标",
+    "echoes": "回声",
+    "github": "GitHub"
+  },
+  "HomePage": {
+    "badge": "Day 2 静态原型",
+    "title": "把语言变成一段记忆旅程。",
+    "description": "贴上一段你在意的语料，选择一位陪伴者，穿过它的词语、场景、表达和回声，让文本慢慢成为你的记忆。",
+    "primaryCta": "从语料开始",
+    "secondaryCta": "预览路线",
+    "trunkLabel": "主干流程",
+    "trunkItems": [
+      "语料",
+      "旅程",
+      "地标",
+      "场景",
+      "回应",
+      "反馈",
+      "记忆",
+      "返回"
+    ],
+    "footer": "EchoVoyage Day 2 仍然是静态 Web 原型。LLM 生成、SQLite 持久化和真实记忆更新还没有接入。"
+  },
+  "CorpusInput": {
+    "kicker": "语料",
+    "heading": "贴上一段你想进入的文本",
+    "titleLabel": "标题",
+    "titlePlaceholder": "给这段语料命名",
+    "rawLabel": "原文",
+    "rawPlaceholder": "可以贴歌词、演讲、对话、文章、字幕、诗，或任何对你有意义的文本。",
+    "languageLabel": "语言提示",
+    "cta": "开启旅程",
+    "note": "这里只是静态预览，生成能力还没有接入。",
+    "status": "Day 2"
+  },
+  "AgentPersonaPicker": {
+    "kicker": "陪伴者",
+    "heading": "选择一位 Agent 陪伴者",
+    "status": "静态",
+    "personas": {
+      "gentle-guide": {
+        "name": "温柔向导",
+        "description": "柔和反馈、耐心提示，以及缓慢返回。"
+      },
+      "strict-mentor": {
+        "name": "严格导师",
+        "description": "更明确的纠正，以及通向掌握的清晰路径。"
+      },
+      "mischievous-bard": {
+        "name": "顽皮吟游者",
+        "description": "带来游戏感场景、意外提示和故事转折。"
+      },
+      "brave-companion": {
+        "name": "勇敢同行者",
+        "description": "适合喜欢节奏和冒险感的学习者。"
+      },
+      "silent-scholar": {
+        "name": "沉默学者",
+        "description": "少说一点，记录得更仔细，也更精确。"
+      }
+    }
+  },
+  "JourneyMap": {
+    "kicker": "旅程地图",
+    "difficulty": "难度"
+  },
+  "TrainingScene": {
+    "kicker": "训练场景",
+    "description": "这是 Day 2 的静态角色扮演预览。真实回答检查和 Agent 反馈会在后续接入。",
+    "promptLabel": "陪伴者提示",
+    "responseLabel": "学习者回应",
+    "feedbackLabel": "陪伴者反馈"
+  },
+  "MemoryStats": {
+    "kicker": "今日回声",
+    "heading": "等待你返回的地方。",
+    "description": "记忆是一条路。EchoVoyage 以后会在地标开始变淡时，把它们重新带回来。",
+    "masteryLabel": "掌握度",
+    "masteryNote": "第一段旅程的静态预览分数。",
+    "echoesLabel": "等待中的回声",
+    "echoesNote": "被安排在未来返回的地标。",
+    "trailLabel": "记忆轨迹"
+  },
+  "LanguageSwitcher": {
+    "label": "语言",
+    "en": "EN",
+    "zh": "中文"
+  }
+}

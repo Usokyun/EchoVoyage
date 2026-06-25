@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl"
+
 export type CorpusInputProps = {
   title?: string
   rawText?: string
@@ -9,6 +11,8 @@ export function CorpusInput({
   rawText = "",
   language = "English",
 }: CorpusInputProps) {
+  const t = useTranslations("CorpusInput")
+
   return (
     <section
       id="corpus"
@@ -17,45 +21,45 @@ export function CorpusInput({
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="font-mono text-xs uppercase tracking-[0.24em] text-[var(--accent)]">
-            Corpus
+            {t("kicker")}
           </p>
           <h2 className="mt-3 text-2xl font-semibold tracking-[-0.04em]">
-            Paste a text you want to travel through
+            {t("heading")}
           </h2>
         </div>
         <span className="rounded-full border border-[color:var(--border)] px-3 py-1 font-mono text-xs text-[var(--muted)]">
-          Day 2
+          {t("status")}
         </span>
       </div>
 
       <div className="mt-6 grid gap-4">
         <label className="grid gap-2">
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-            Title
+            {t("titleLabel")}
           </span>
           <input
             className="rounded-2xl border border-[color:var(--border)] bg-white/60 px-4 py-3 text-sm outline-none transition focus:border-[var(--accent)]"
             defaultValue={title}
-            placeholder="Name this corpus"
+            placeholder={t("titlePlaceholder")}
             readOnly
           />
         </label>
 
         <label className="grid gap-2">
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-            Raw text
+            {t("rawLabel")}
           </span>
           <textarea
             className="min-h-44 resize-none rounded-2xl border border-[color:var(--border)] bg-white/60 px-4 py-3 text-sm leading-7 outline-none transition focus:border-[var(--accent)]"
             defaultValue={rawText}
-            placeholder="Paste a lyric, speech, dialogue, essay, subtitle, poem, or any meaningful text."
+            placeholder={t("rawPlaceholder")}
             readOnly
           />
         </label>
 
         <label className="grid gap-2">
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--muted)]">
-            Language hint
+            {t("languageLabel")}
           </span>
           <input
             className="rounded-2xl border border-[color:var(--border)] bg-white/60 px-4 py-3 text-sm outline-none transition focus:border-[var(--accent)]"
@@ -71,10 +75,10 @@ export function CorpusInput({
           disabled
           className="rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-white opacity-80"
         >
-          Begin the voyage
+          {t("cta")}
         </button>
         <p className="text-sm leading-6 text-[var(--muted)]">
-          Static preview only. Generation is not connected yet.
+          {t("note")}
         </p>
       </div>
     </section>
